@@ -1,4 +1,4 @@
-//create XMLHTTP Request
+/*//create XMLHTTP Request
 
 //step 01 (Object to be sent from Client side)
 var myrequest = new XMLHttpRequest();
@@ -50,4 +50,6 @@ myrequest.onload = function()
         console.log("country: "+result[i].name.common+" ; Capital: "+result[i].capital+" ; Flag: "+result[i].flags.png)
     }
 
-}
+}*/
+
+//-------------------------------------
