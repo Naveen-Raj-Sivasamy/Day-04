@@ -20,9 +20,24 @@ myrequest.send();
 
 //response
 
+// myrequest.onload = function()
+// {
+//   var data = myrequest.response;
+//   console.log(data)  
+// }
+
+//now commit all these and see website and console
+
+//result will be raw. because we haven't parsed in our code
+
+//so do apply parse in our code. So I commented above code and mentioned below with parse added
+
 myrequest.onload = function()
 {
   var data = myrequest.response;
-  console.log(data)  
-}
+ // console.log(data)
+  var result = JSON.parse(data); //this parse will load data nicely 
+  console.log(result)
 
+  console.log(result[230].area);//to print particular area value 
+}
