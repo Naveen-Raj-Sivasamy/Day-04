@@ -39,5 +39,15 @@ myrequest.onload = function()
   var result = JSON.parse(data); //this parse will load data nicely 
   console.log(result)
 
-  console.log(result[230].area);//to print particular area value 
+  console.log(result[230].area);//to print particular area value
+
+  console.log(result[0].name.common)
+
+  //how to access multiple values? for loop
+
+    for(var i=0; i<result.length; i++)
+    {
+        console.log("country: "+result[i].name.common+" ; Capital: "+result[i].capital+" ; Flag: "+result[i].flags.png)
+    }
+
 }
